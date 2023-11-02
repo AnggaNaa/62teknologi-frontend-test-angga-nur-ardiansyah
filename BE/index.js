@@ -14,6 +14,10 @@ const apiUrl2 = "https://api.yelp.com/v3/businesses";
 const apiUrl3 =
   "https://api.yelp.com/v3/businesses/{business_id_or_alias}/reviews";
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.get("/api/yelp/businesses", async (req, res) => {
   try {
     const response = await axios.get(apiUrl, {
