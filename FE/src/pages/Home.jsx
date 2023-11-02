@@ -80,6 +80,7 @@ export default function Home() {
     indexOfFirstPage,
     indexOfLastPage
   );
+  console.log("ini curren", currentBussinesses);
 
   async function getBusinesses() {
     try {

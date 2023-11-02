@@ -29,6 +29,7 @@ export function Detail() {
   const { id } = useParams();
   const [data, setData] = useState();
   const [dataReviews, setDataReviews] = useState([]);
+  console.log("ini data", data);
   const [location, setLocation] = useState(null);
   const center = location
     ? { lat: location.lat, lng: location.lng, name: location.name }
@@ -249,10 +250,10 @@ export function Detail() {
                         fontWeight={"bold"}
                         fontSize={"lg"}
                       >
-                        {data.hours[0].is_open_now ? (
-                          "Open"
-                        ) : (
+                        {data.is_closed ? (
                           <Text color={"red.500"}>Closed</Text>
+                        ) : (
+                          <Text color={"green.500"}>Open</Text>
                         )}
                         <Text color={"white"}>
                           {" "}
