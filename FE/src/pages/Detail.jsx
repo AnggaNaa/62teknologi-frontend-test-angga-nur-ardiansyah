@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { API } from "../lib/API";
+import { API } from "../lib/api";
 
 import React from "react";
 import {

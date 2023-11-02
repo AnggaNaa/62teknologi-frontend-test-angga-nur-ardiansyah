@@ -17,13 +17,12 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import { API } from "../lib/API";
+import { API } from "../lib/api";
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import "../index.css";
 import { Link } from "react-router-dom";
 import SmallWithLogoLeft from "../../layouts/Footer";
-import Slider from "react-slick";
 
 export default function Home() {
   const [searchLocation, setSearchLocation] = useState("");
